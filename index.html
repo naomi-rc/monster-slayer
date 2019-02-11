@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <style>
+            .player{
+                display: inline-block;
+                margin-left: 25%;
+            }
+
+            #controls{
+                width: 45%;
+                height: 5%;
+                margin-left: 35%;
+                margin-top: 2%;
+                border: 1px solid grey;
+                padding: 10px;
+            }
+
+            .strength{
+                height: 30px;
+                width: 200px;
+                background-color: grey;
+            }
+
+            h2{
+                text-align: center;
+            }
+
+        </style>
+
+
+        <div id="app">
+            <div class="player">
+                <h2>YOU</h2>
+                <div class="you strength"></div>
+
+            </div>
+            <div class="player">
+                <h2>MONSTER</h2>
+                <div class="monster strength"></div>
+            </div>
+            <div id="controls">
+                <button class="btn btn-danger">ATTACK</button>
+                <button class="btn btn-warning">SPECIAL ATTACK</button>
+                <button class="btn btn-success">HEAL</button>
+                <button class="btn btn-default">GIVE UP</button>
+            </div>
+        </div>
+
+        <script>
+            new Vue({
+                el: "#app",
+                date: {
+
+                }
+
+            })
+
+
+        </script>
+
+    </body>
+</html>
